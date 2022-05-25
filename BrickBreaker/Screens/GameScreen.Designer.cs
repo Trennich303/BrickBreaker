@@ -33,6 +33,7 @@
             this.pauseLabel = new System.Windows.Forms.Label();
             this.livesLabel = new System.Windows.Forms.Label();
             this.leaveLabel = new System.Windows.Forms.Label();
+            this.scoreplay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gameTimer
@@ -60,7 +61,7 @@
             this.livesLabel.BackColor = System.Drawing.Color.Transparent;
             this.livesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.livesLabel.ForeColor = System.Drawing.Color.White;
-            this.livesLabel.Location = new System.Drawing.Point(16, 46);
+            this.livesLabel.Location = new System.Drawing.Point(16, 11);
             this.livesLabel.Name = "livesLabel";
             this.livesLabel.Size = new System.Drawing.Size(265, 59);
             this.livesLabel.TabIndex = 1;
@@ -79,12 +80,25 @@
             this.leaveLabel.Text = "Press Enter to Leave, Esc again to continue";
             this.leaveLabel.Visible = false;
             // 
+            // scoreplay
+            // 
+            this.scoreplay.BackColor = System.Drawing.Color.Transparent;
+            this.scoreplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.scoreplay.Location = new System.Drawing.Point(77, 70);
+            this.scoreplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.scoreplay.Name = "scoreplay";
+            this.scoreplay.Size = new System.Drawing.Size(150, 34);
+            this.scoreplay.TabIndex = 3;
+            this.scoreplay.Text = "label1";
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.scoreplay);
             this.Controls.Add(this.leaveLabel);
             this.Controls.Add(this.livesLabel);
             this.Controls.Add(this.pauseLabel);
@@ -106,5 +120,6 @@
         private System.Windows.Forms.Label pauseLabel;
         private System.Windows.Forms.Label livesLabel;
         private System.Windows.Forms.Label leaveLabel;
+        public System.Windows.Forms.Label scoreplay;
     }
 }
